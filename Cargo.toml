@@ -1,0 +1,21 @@
+[package]
+name = "cookiecutter"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "cookiecutter"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cookies"
+path = "src/bin.rs"
+
+[dependencies]
+sqlite = "0.26.0"
+lz4 = "1.23.2"
+json = "0.12.4"
+regex = "1.5.4"
+clap = { version = "3.0.5", features = ["derive"] }
